@@ -36,7 +36,7 @@
          </opaqueInsets>
          <children>
             <TextField fx:id="txtSelectedLanguage" layoutX="11.0" layoutY="141.0" prefHeight="30.0" prefWidth="216.0" promptText="Selected Language" />
-            <CheckBox fx:id="chbPhp" layoutX="14.0" layoutY="5.0" mnemonicParsing="false" text="PHP" />
+            <CheckBox fx:id="cbxPhp" layoutX="14.0" layoutY="5.0" mnemonicParsing="false" text="PHP" />
             <CheckBox fx:id="cbxJavaScript" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" text="JavaScript" />
             <CheckBox fx:id="cbxRuby" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" text="Ruby" />
             <CheckBox fx:id="cbxKotlin" layoutX="14.0" layoutY="84.0" mnemonicParsing="false" text="Kotlin" />

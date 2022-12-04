@@ -13,6 +13,7 @@ public class MainFormController {
     public CheckBox cbxRuby;
     public CheckBox cbxKotlin;
     public TextField txtSelectedLanguage;
+    public CheckBox cbxPhp;
 
     public void submitOnAction(ActionEvent actionEvent) {
 
@@ -24,9 +25,23 @@ public class MainFormController {
     }
 
     public void showLanguagesOnAction(ActionEvent actionEvent) {
+
+        txtSelectedLanguage.clear();
         String[] languages=new String[4];
-        if(cbxJavaScript.isSelected()){
-            languages
+
+        if(cbxJavaScript.isSelected()) languages[0]="JavaScript";
+        if(cbxKotlin.isSelected()) languages[1]="Kotlin";
+        if (cbxRuby.isSelected()) languages[2]="Ruby";
+        if(cbxPhp.isSelected()) languages[3]="PHP";
+
+        String  selectedLanguage=" ";
+        for(String lang:languages){
+            if(lang!=null){
+                selectedLanguage+=" "+lang;
+            }
         }
+
+        txtSelectedLanguage.setText(selectedLanguage);
+
     }
 }
